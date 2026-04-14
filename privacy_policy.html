@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperPinger — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 0 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .logo-text { font-size: 24px; font-weight: 700; }
+        .logo-text span { color: #7C73E6; }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .date {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 32px 0 12px;
+            padding-left: 12px;
+            border-left: 3px solid #7C73E6;
+        }
+        p { color: #aaaaaa; margin-bottom: 12px; }
+        ul { color: #aaaaaa; padding-left: 24px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; }
+        a { color: #7C73E6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight {
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border: 1px solid #2a2a4a;
+        }
+        .highlight p { color: #e0e0e0; margin: 0; }
+        .contact {
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 40px;
+            border: 1px solid #2a2a4a;
+            text-align: center;
+        }
+        .contact p { color: #aaaaaa; }
+        .contact a { font-size: 16px; font-weight: 500; }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #1a1a2e;
+            text-align: center;
+            color: #444;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="logo">
+        <div class="logo-text">Super<span>Pinger</span></div>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated: April 14, 2026</p>
+
+    <div class="highlight">
+        <p>SuperPinger is a network diagnostics tool. We are committed to protecting your privacy. This policy explains what data we collect and how we use it.</p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>SuperPinger collects minimal data necessary to provide network diagnostics functionality:</p>
+    <ul>
+        <li><strong>Network data:</strong> IP addresses and domain names you enter for ping, traceroute, DNS lookup, port scan, and Whois queries. This data is used only to perform the requested network operation and is not stored on our servers.</li>
+        <li><strong>Usage data:</strong> Ping history and saved hosts are stored locally on your device only and are never transmitted to our servers.</li>
+        <li><strong>Public IP address:</strong> We use the ipify.org API to display your public IP address. This request is made to ipify.org servers.</li>
+    </ul>
+
+    <h2>2. Third-Party Services</h2>
+    <p>SuperPinger uses the following third-party services:</p>
+    <ul>
+        <li><strong>Google AdMob</strong> — displays advertisements in the free version of the app. AdMob may collect device identifiers and usage data for ad personalization. See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+        <li><strong>Google Play Billing</strong> — processes subscription payments for SuperPinger Pro. Payment data is handled entirely by Google. See <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank">Google Payments Privacy Policy</a>.</li>
+        <li><strong>ipify.org</strong> — used to retrieve your public IP address. See <a href="https://www.ipify.org" target="_blank">ipify.org</a>.</li>
+        <li><strong>WHOIS servers</strong> — standard public WHOIS servers are queried when you use the Whois Lookup feature.</li>
+    </ul>
+
+    <h2>3. Data Storage</h2>
+    <p>All user data (ping history, saved hosts, settings) is stored locally on your device using Android's Room database and SharedPreferences. We do not have access to this data and it is never transmitted to our servers.</p>
+    <p>You can delete all locally stored data at any time by clearing the app data in your device settings or by uninstalling the app.</p>
+
+    <h2>4. Permissions</h2>
+    <p>SuperPinger requests the following Android permissions:</p>
+    <ul>
+        <li><strong>INTERNET</strong> — required for all network diagnostics features (ping, traceroute, DNS, etc.)</li>
+        <li><strong>ACCESS_NETWORK_STATE</strong> — to check internet connectivity before performing network checks</li>
+        <li><strong>POST_NOTIFICATIONS</strong> — to send alerts when monitored hosts go offline (Pro feature, optional)</li>
+        <li><strong>FOREGROUND_SERVICE</strong> — to run host monitoring in the background (Pro feature)</li>
+        <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to restart host monitoring after device reboot (Pro feature)</li>
+        <li><strong>VIBRATE</strong> — for haptic feedback on slider controls</li>
+    </ul>
+
+    <h2>5. Advertising</h2>
+    <p>The free version of SuperPinger displays banner advertisements provided by Google AdMob. These ads may be personalized based on your interests. You can opt out of personalized advertising in your device settings under Google → Ads → Opt out of Ads Personalization.</p>
+    <p>SuperPinger Pro subscribers do not see any advertisements.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>SuperPinger is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>8. Your Rights</h2>
+    <p>Since we do not collect personal data on our servers, there is no personal data to request, modify, or delete from our side. All app data stored on your device can be deleted by clearing app data or uninstalling the app.</p>
+
+    <div class="contact">
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <br>
+        <a href="mailto:support@superpinger.app">support@superpinger.app</a>
+    </div>
+
+    <!-- Russian version -->
+    <br><br>
+    <hr style="border-color: #1a1a2e; margin: 40px 0;">
+
+    <h1>Политика конфиденциальности</h1>
+    <p class="date">Последнее обновление: 14 апреля 2026 г.</p>
+
+    <div class="highlight">
+        <p>SuperPinger — инструмент сетевой диагностики. Мы стремимся защитить вашу конфиденциальность. Эта политика объясняет, какие данные мы собираем и как их используем.</p>
+    </div>
+
+    <h2>1. Собираемые данные</h2>
+    <p>SuperPinger собирает минимум данных для обеспечения функций сетевой диагностики:</p>
+    <ul>
+        <li><strong>Сетевые данные:</strong> IP-адреса и доменные имена, которые вы вводите для пинга, трассировки, DNS-поиска, сканирования портов и Whois-запросов. Эти данные используются только для выполнения запрошенной операции и не хранятся на наших серверах.</li>
+        <li><strong>Данные об использовании:</strong> История пингов и сохранённые хосты хранятся только локально на вашем устройстве и никогда не передаются на наши серверы.</li>
+        <li><strong>Публичный IP-адрес:</strong> Мы используем API ipify.org для отображения вашего публичного IP-адреса.</li>
+    </ul>
+
+    <h2>2. Сторонние сервисы</h2>
+    <ul>
+        <li><strong>Google AdMob</strong> — показывает рекламу в бесплатной версии. AdMob может собирать идентификаторы устройства для персонализации рекламы.</li>
+        <li><strong>Google Play Billing</strong> — обрабатывает платежи за подписку SuperPinger Pro. Платёжные данные полностью обрабатываются Google.</li>
+        <li><strong>ipify.org</strong> — используется для определения публичного IP-адреса.</li>
+        <li><strong>WHOIS серверы</strong> — публичные WHOIS серверы используются при запросе функции Whois Lookup.</li>
+    </ul>
+
+    <h2>3. Хранение данных</h2>
+    <p>Все пользовательские данные (история пингов, сохранённые хосты, настройки) хранятся локально на вашем устройстве. Мы не имеем доступа к этим данным и они никогда не передаются на наши серверы.</p>
+
+    <h2>4. Разрешения</h2>
+    <ul>
+        <li><strong>INTERNET</strong> — для всех функций сетевой диагностики</li>
+        <li><strong>ACCESS_NETWORK_STATE</strong> — для проверки наличия интернета</li>
+        <li><strong>POST_NOTIFICATIONS</strong> — для уведомлений о недоступности хостов (Pro)</li>
+        <li><strong>FOREGROUND_SERVICE</strong> — для фонового мониторинга хостов (Pro)</li>
+        <li><strong>RECEIVE_BOOT_COMPLETED</strong> — для перезапуска мониторинга после перезагрузки (Pro)</li>
+        <li><strong>VIBRATE</strong> — для тактильной обратной связи на слайдерах</li>
+    </ul>
+
+    <h2>5. Реклама</h2>
+    <p>Бесплатная версия SuperPinger показывает баннерную рекламу от Google AdMob. Подписчики SuperPinger Pro не видят рекламы.</p>
+
+    <h2>6. Дети</h2>
+    <p>SuperPinger не предназначен для детей младше 13 лет.</p>
+
+    <h2>7. Изменения политики</h2>
+    <p>Мы можем обновлять эту политику. Об изменениях мы уведомляем путём обновления даты вверху страницы.</p>
+
+    <div class="contact">
+        <p>По вопросам конфиденциальности обращайтесь:</p>
+        <br>
+        <a href="mailto:support@superpinger.app">support@superpinger.app</a>
+    </div>
+
+    <footer>
+        <p>© 2026 SuperPinger. All rights reserved.</p>
+    </footer>
+
+</div>
+</body>
+</html>
