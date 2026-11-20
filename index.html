@@ -1,207 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperPinger — Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.7;
-            padding: 0 16px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 48px 24px;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 40px;
-        }
-        .logo-text { font-size: 24px; font-weight: 700; }
-        .logo-text span { color: #7C73E6; }
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 8px;
-        }
-        .date {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 40px;
-        }
-        h2 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #ffffff;
-            margin: 32px 0 12px;
-            padding-left: 12px;
-            border-left: 3px solid #7C73E6;
-        }
-        p { color: #aaaaaa; margin-bottom: 12px; }
-        ul { color: #aaaaaa; padding-left: 24px; margin-bottom: 12px; }
-        li { margin-bottom: 6px; }
-        a { color: #7C73E6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .highlight {
-            background: #1a1a2e;
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin: 24px 0;
-            border: 1px solid #2a2a4a;
-        }
-        .highlight p { color: #e0e0e0; margin: 0; }
-        .contact {
-            background: #1a1a2e;
-            border-radius: 12px;
-            padding: 24px;
-            margin-top: 40px;
-            border: 1px solid #2a2a4a;
-            text-align: center;
-        }
-        .contact p { color: #aaaaaa; }
-        .contact a { font-size: 16px; font-weight: 500; }
-        footer {
-            margin-top: 48px;
-            padding-top: 24px;
-            border-top: 1px solid #1a1a2e;
-            text-align: center;
-            color: #444;
-            font-size: 13px;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-
-    <div class="logo">
-        <div class="logo-text">Super<span>Pinger</span></div>
-    </div>
-
-    <h1>Privacy Policy</h1>
-    <p class="date">Last updated: April 14, 2026</p>
-
-    <div class="highlight">
-        <p>SuperPinger is a network diagnostics tool. We are committed to protecting your privacy. This policy explains what data we collect and how we use it.</p>
-    </div>
-
-    <h2>1. Information We Collect</h2>
-    <p>SuperPinger collects minimal data necessary to provide network diagnostics functionality:</p>
-    <ul>
-        <li><strong>Network data:</strong> IP addresses and domain names you enter for ping, traceroute, DNS lookup, port scan, and Whois queries. This data is used only to perform the requested network operation and is not stored on our servers.</li>
-        <li><strong>Usage data:</strong> Ping history and saved hosts are stored locally on your device only and are never transmitted to our servers.</li>
-        <li><strong>Public IP address:</strong> We use the ipify.org API to display your public IP address. This request is made to ipify.org servers.</li>
-    </ul>
-
-    <h2>2. Third-Party Services</h2>
-    <p>SuperPinger uses the following third-party services:</p>
-    <ul>
-        <li><strong>Google AdMob</strong> — displays advertisements in the free version of the app. AdMob may collect device identifiers and usage data for ad personalization. See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
-        <li><strong>Google Play Billing</strong> — processes subscription payments for SuperPinger Pro. Payment data is handled entirely by Google. See <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank">Google Payments Privacy Policy</a>.</li>
-        <li><strong>ipify.org</strong> — used to retrieve your public IP address. See <a href="https://www.ipify.org" target="_blank">ipify.org</a>.</li>
-        <li><strong>WHOIS servers</strong> — standard public WHOIS servers are queried when you use the Whois Lookup feature.</li>
-    </ul>
-
-    <h2>3. Data Storage</h2>
-    <p>All user data (ping history, saved hosts, settings) is stored locally on your device using Android's Room database and SharedPreferences. We do not have access to this data and it is never transmitted to our servers.</p>
-    <p>You can delete all locally stored data at any time by clearing the app data in your device settings or by uninstalling the app.</p>
-
-    <h2>4. Permissions</h2>
-    <p>SuperPinger requests the following Android permissions:</p>
-    <ul>
-        <li><strong>INTERNET</strong> — required for all network diagnostics features (ping, traceroute, DNS, etc.)</li>
-        <li><strong>ACCESS_NETWORK_STATE</strong> — to check internet connectivity before performing network checks</li>
-        <li><strong>POST_NOTIFICATIONS</strong> — to send alerts when monitored hosts go offline (Pro feature, optional)</li>
-        <li><strong>FOREGROUND_SERVICE</strong> — to run host monitoring in the background (Pro feature)</li>
-        <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to restart host monitoring after device reboot (Pro feature)</li>
-        <li><strong>VIBRATE</strong> — for haptic feedback on slider controls</li>
-    </ul>
-
-    <h2>5. Advertising</h2>
-    <p>The free version of SuperPinger displays banner advertisements provided by Google AdMob. These ads may be personalized based on your interests. You can opt out of personalized advertising in your device settings under Google → Ads → Opt out of Ads Personalization.</p>
-    <p>SuperPinger Pro subscribers do not see any advertisements.</p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>SuperPinger is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
-
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
-    <h2>8. Your Rights</h2>
-    <p>Since we do not collect personal data on our servers, there is no personal data to request, modify, or delete from our side. All app data stored on your device can be deleted by clearing app data or uninstalling the app.</p>
-
-    <div class="contact">
-        <p>If you have any questions about this Privacy Policy, please contact us:</p>
-        <br>
-        <a href="mailto:support@superpinger.app">support@superpinger.app</a>
-    </div>
-
-    <!-- Russian version -->
-    <br><br>
-    <hr style="border-color: #1a1a2e; margin: 40px 0;">
-
-    <h1>Политика конфиденциальности</h1>
-    <p class="date">Последнее обновление: 14 апреля 2026 г.</p>
-
-    <div class="highlight">
-        <p>SuperPinger — инструмент сетевой диагностики. Мы стремимся защитить вашу конфиденциальность. Эта политика объясняет, какие данные мы собираем и как их используем.</p>
-    </div>
-
-    <h2>1. Собираемые данные</h2>
-    <p>SuperPinger собирает минимум данных для обеспечения функций сетевой диагностики:</p>
-    <ul>
-        <li><strong>Сетевые данные:</strong> IP-адреса и доменные имена, которые вы вводите для пинга, трассировки, DNS-поиска, сканирования портов и Whois-запросов. Эти данные используются только для выполнения запрошенной операции и не хранятся на наших серверах.</li>
-        <li><strong>Данные об использовании:</strong> История пингов и сохранённые хосты хранятся только локально на вашем устройстве и никогда не передаются на наши серверы.</li>
-        <li><strong>Публичный IP-адрес:</strong> Мы используем API ipify.org для отображения вашего публичного IP-адреса.</li>
-    </ul>
-
-    <h2>2. Сторонние сервисы</h2>
-    <ul>
-        <li><strong>Google AdMob</strong> — показывает рекламу в бесплатной версии. AdMob может собирать идентификаторы устройства для персонализации рекламы.</li>
-        <li><strong>Google Play Billing</strong> — обрабатывает платежи за подписку SuperPinger Pro. Платёжные данные полностью обрабатываются Google.</li>
-        <li><strong>ipify.org</strong> — используется для определения публичного IP-адреса.</li>
-        <li><strong>WHOIS серверы</strong> — публичные WHOIS серверы используются при запросе функции Whois Lookup.</li>
-    </ul>
-
-    <h2>3. Хранение данных</h2>
-    <p>Все пользовательские данные (история пингов, сохранённые хосты, настройки) хранятся локально на вашем устройстве. Мы не имеем доступа к этим данным и они никогда не передаются на наши серверы.</p>
-
-    <h2>4. Разрешения</h2>
-    <ul>
-        <li><strong>INTERNET</strong> — для всех функций сетевой диагностики</li>
-        <li><strong>ACCESS_NETWORK_STATE</strong> — для проверки наличия интернета</li>
-        <li><strong>POST_NOTIFICATIONS</strong> — для уведомлений о недоступности хостов (Pro)</li>
-        <li><strong>FOREGROUND_SERVICE</strong> — для фонового мониторинга хостов (Pro)</li>
-        <li><strong>RECEIVE_BOOT_COMPLETED</strong> — для перезапуска мониторинга после перезагрузки (Pro)</li>
-        <li><strong>VIBRATE</strong> — для тактильной обратной связи на слайдерах</li>
-    </ul>
-
-    <h2>5. Реклама</h2>
-    <p>Бесплатная версия SuperPinger показывает баннерную рекламу от Google AdMob. Подписчики SuperPinger Pro не видят рекламы.</p>
-
-    <h2>6. Дети</h2>
-    <p>SuperPinger не предназначен для детей младше 13 лет.</p>
-
-    <h2>7. Изменения политики</h2>
-    <p>Мы можем обновлять эту политику. Об изменениях мы уведомляем путём обновления даты вверху страницы.</p>
-
-    <div class="contact">
-        <p>По вопросам конфиденциальности обращайтесь:</p>
-        <br>
-        <a href="mailto:support@superpinger.app">support@superpinger.app</a>
-    </div>
-
-    <footer>
-        <p>© 2026 SuperPinger. All rights reserved.</p>
-    </footer>
-
-</div>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SuperPinger — Privacy Policy / Политика конфиденциальности</title><style>body{margin:0;background:#090e1d;color:#eef1ff;font:17px/1.65 system-ui,sans-serif}main{max-width:900px;margin:auto;padding:40px 24px}h1{font-size:34px}h2{margin-top:34px;color:#b18aff;font-size:22px}a{color:#55e1d3}p,li{color:#c4cce0}nav{padding:16px;background:#171f33;border-radius:12px}article+article{border-top:1px solid #424d69;margin-top:56px;padding-top:32px}code{overflow-wrap:anywhere}footer{margin-top:48px;color:#929bb5}@media(max-width:600px){main{padding:24px 16px}h1{font-size:28px}}</style></head><body><main><nav><strong>SuperPinger</strong> · <a href="#en">English</a> · <a href="#ru">Русский</a></nav>
+<article id="en" lang="en"><h1>Privacy Policy</h1><p>Last updated: November 21, 2026</p>
+<section><h2>1. About this policy</h2><div>This policy covers the Google Play version of SuperPinger (Android package <code>com.superpinger</code>), a network diagnostics app developed by CyberUnagiMaki / CyberUM. It describes version 2.0.1 and its network tools, Wi-Fi coverage map, optional Telegram integration, advertising and PRO subscription. You do not need to create a SuperPinger account. Contact: <a href="mailto:support@superpinger.app">support@superpinger.app</a>.</div></section>
+<section><h2>2. Network diagnostics and public IP</h2><div>The app processes addresses and domain names you enter or save, diagnostic results, response times, packet loss, timestamps and connection information. Depending on the tool and Android permissions, this can include local/public IP addresses, Wi-Fi name and access-point identifier (SSID/BSSID), signal strength, frequency, link speed, carrier, SIM country, network type and roaming status. Available information about devices on your local network may also be displayed.<br><br>Checks send network traffic to the selected hosts or the built-in connectivity-test destinations. Those destinations and network providers can see your source IP and the requests necessary for the check. The app is not a VPN and does not route other apps' traffic through a developer-operated server. It reads traffic counters, not the contents of other apps' communications.<br><br>To display your public IP, the app contacts <a href="https://www.ipify.org/">ipify</a>, with <a href="https://aws.amazon.com/privacy/">Amazon AWS</a> as a fallback. To show a country flag and network/ISP information, it sends the public IP to <a href="https://ipwho.is/">ipwho.is</a>. These requests can occur when Home is opened or refreshed; this is IP-based location, not GPS tracking. Whois queries send the requested address or domain to <a href="https://rdap.org/">rdap.org</a> and the appropriate registry service over HTTPS. These services receive technical request information and apply their own policies.</div></section>
+<section><h2>3. History, traffic statistics and Wi-Fi coverage maps</h2><div>History, favorites, preferences and diagnostic reports are stored in the app's local storage. With optional usage access, SuperPinger reads Android's aggregate device traffic statistics for features such as daily and monthly totals; it does not use this access to build a browsing history.<br><br>A coverage plan contains room names, dimensions and positions, measurement-point coordinates within the plan, signal readings and timestamps, Wi-Fi network identity and the manually placed router. The plan is manually drawn; it is not a GPS-derived floor plan. Coverage files are stored in Android's no-backup app directory and are not uploaded to a developer-operated map service. Background pulses are a visual effect, not a new measurement.<br><br>CSV/report export and Android's Share action send the selected file to a location or app you choose. The chosen recipient then controls its copy.</div></section>
+<section><h2>4. Optional monitoring, widgets and Telegram</h2><div>If you enable host monitoring or continuous widget updates, the app may run a foreground service with a persistent notification and use network/battery resources. Enabled host monitoring may restart after reboot, subject to Android restrictions. You can turn these features off in Settings. Existing monitoring tools do not require PRO.<br><br>If you configure and enable Telegram, the bot token, destination chat ID and notification contents are used to call the <a href="https://telegram.org/privacy">Telegram Bot API</a> directly. Events may contain saved host names/addresses, availability changes and times. Telegram and members of your chosen chat can access delivered messages. A test message is sent only when you request it.<br><br>The bot configuration is encrypted locally using a key held by Android Keystore. Configuration and pending-event files are excluded from Android backup. Pending event text is stored locally in app-private storage; the queue is limited to 100 events. Delivered events are removed from the queue, and events older than 24 hours are discarded when the worker next processes them. Disabling sending pauses delivery; deleting the token through the app also clears its configuration and queue. It does not delete messages already sent to Telegram. You can revoke the bot token through BotFather.</div></section>
+<section><h2>5. Advertising and PRO subscriptions</h2><div>The free version uses Google AdMob for main-screen banners, result-sheet banners and interstitial ads. Google's Mobile Ads SDK collects and shares IP addresses, app/ad interaction information, diagnostic/performance information, and supported device/account identifiers, including the Android advertising ID, for advertising, analytics and fraud prevention. An IP address may be used to estimate approximate location. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google advertising information</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">the SDK data disclosure</a>.<br><br>Supported advertising-ID and privacy controls are available in Android/Google settings; availability and wording depend on the device. Changing these settings does not necessarily stop all ad-related processing.<br><br>Google Play handles PRO subscription purchases, renewals, cancellations and promo-code redemption. The app receives purchase/product identifiers, purchase status, acknowledgement status and the purchase token needed to process the entitlement. The developer does not receive your payment-card details. The current app checks subscriptions through Google Play Billing on the device; it does not send purchase tokens to a developer-operated subscription server. A local no-backup timestamp supports a short offline entitlement cache of up to 24 hours. See <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice">Google Payments' Privacy Notice</a>.<br><br>While a PRO entitlement is recognized as active, the app does not request or display banners or interstitials. PRO does not erase information previously processed by advertising providers and does not disable network checks, IP lookups or Telegram features that you use. Uninstalling the app does not cancel a Google Play subscription.</div></section>
+<section><h2>6. Android permissions and special access</h2><div><ul><li><strong>INTERNET / ACCESS_NETWORK_STATE / ACCESS_WIFI_STATE:</strong> network requests and connection/Wi-Fi information.</li><li><strong>ACCESS_COARSE_LOCATION / ACCESS_FINE_LOCATION:</strong> Android may require location permission to expose Wi-Fi identity and signal information used by diagnostics and coverage measurements. Some devices also require Location services to be enabled. The app's diagnostics do not request GPS coordinates or record travel routes.</li><li><strong>READ_PHONE_STATE:</strong> available mobile-network and SIM/telephony status information. It is not used to read call recordings, SMS or contacts.</li><li><strong>PACKAGE_USAGE_STATS:</strong> optional special access to aggregate network-usage statistics.</li><li><strong>POST_NOTIFICATIONS:</strong> monitoring alerts and ongoing-service notifications.</li><li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE / RECEIVE_BOOT_COMPLETED:</strong> user-enabled monitoring and widget operation, including eligible restart after reboot.</li><li><strong>VIBRATE:</strong> haptic feedback.</li><li><strong>Advertising ID and Google Play billing permissions:</strong> advertising identifiers and subscription purchase/restore operations.</li></ul>Permissions and special access can be changed in Android settings. Denying optional access may limit the corresponding feature without requiring you to grant unrelated access.</div></section>
+<section><h2>7. Storage, backup, deletion and security</h2><div>The reviewed app does not upload your diagnostic history, coverage plans or Telegram credentials to a developer-operated backend. This does not mean that no data leaves the device: external diagnostics, IP/registry services, Telegram, Google advertising and Google Play process the data described above.<br><br>History and preferences generally remain until you delete or replace them or clear app storage. Android backup is enabled: eligible databases, settings and other app files may be backed up or transferred according to Android, device and account settings. The coverage plan, Telegram configuration/queue and entitlement cache use the no-backup directory. Copies you export are outside the app's control.<br><br>You can clear app storage or uninstall to remove the local app copy. In-app deletion controls are available for relevant history and Telegram data. Manage system backups and exported copies separately. Deleting local data does not remove already delivered Telegram messages or records held by Google and other providers. Contact those providers for their deletion controls.<br><br>Requests to the named public-IP, registry and Telegram APIs use HTTPS. Diagnostic protocols such as ICMP or connections to user-selected services are not all encrypted; do not treat the app as a secure tunnel. Android app-private storage and Keystore protect the relevant local files, but no storage or transmission method guarantees absolute security.</div></section>
+<section><h2>8. Contact, rights, children and policy changes</h2><div>If you contact us, we process the contact details and content you send to answer your request; our email provider also processes the correspondence. Do not send payment details or bot tokens. We retain support correspondence as reasonably needed to respond, resolve the matter and meet applicable obligations. Depending on applicable law, you may have rights to access, correct, delete or restrict personal information, object to processing, or contact your local data-protection authority. Send requests concerning information under our control to <a href="mailto:support@superpinger.app">support@superpinger.app</a>; third-party records may require a request to the relevant provider.<br><br>SuperPinger is not directed at children under 13. Contact us if you believe a child has provided personal information to us.<br><br>External social links open services with their own privacy policies. This policy page is hosted through GitHub Pages; visits are subject to <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>. This page itself contains no advertising or analytics scripts.<br><br>We may update this policy when app behavior or services change. The updated date identifies the latest revision. Continued use alone is not treated here as consent to processing that legally requires separate consent.</div></section>
+</article>
+<article id="ru" lang="ru"><h1>Политика конфиденциальности</h1><p>Последнее обновление: 21 ноября 2026 года</p>
+<section><h2>1. Об этой политике</h2><div>Политика относится к версии SuperPinger для Google Play (пакет Android <code>com.superpinger</code>), приложению сетевой диагностики разработчика CyberUnagiMaki / CyberUM. Она описывает версию 2.0.1: сетевые инструменты, карту покрытия Wi-Fi, необязательную интеграцию Telegram, рекламу и подписку PRO. Создавать аккаунт SuperPinger не требуется. Контакт: <a href="mailto:support@superpinger.app">support@superpinger.app</a>.</div></section>
+<section><h2>2. Сетевая диагностика и публичный IP</h2><div>Приложение обрабатывает введённые и сохранённые адреса и доменные имена, результаты проверок, задержку, потери пакетов, время измерений и сведения о подключении. В зависимости от инструмента и разрешений Android это могут быть локальный и публичный IP, имя и идентификатор точки Wi-Fi (SSID/BSSID), уровень сигнала, частота, скорость соединения, оператор, страна SIM, тип сети и роуминг. Также могут отображаться доступные сведения об устройствах локальной сети.<br><br>Проверки отправляют сетевые запросы выбранным хостам или встроенным адресам проверки связи. Эти получатели и сетевые провайдеры видят исходный IP и сведения, необходимые для запроса. Приложение не является VPN и не направляет трафик других приложений через сервер разработчика. Оно читает счётчики трафика, а не содержание переписки и передачи данных других приложений.<br><br>Для определения публичного IP приложение обращается к <a href="https://www.ipify.org/">ipify</a>, резервный сервис — <a href="https://aws.amazon.com/privacy/">Amazon AWS</a>. Для флага страны и сведений о сети/провайдере публичный IP передаётся <a href="https://ipwho.is/">ipwho.is</a>. Запросы могут выполняться при открытии или обновлении главной страницы. Это определение страны по IP, а не GPS-слежение. Whois передаёт запрошенный IP или домен сервису <a href="https://rdap.org/">rdap.org</a> и соответствующему реестру по HTTPS. Эти сервисы получают технические сведения о запросах и применяют собственные правила обработки данных.</div></section>
+<section><h2>3. История, статистика трафика и карта Wi-Fi</h2><div>История, избранное, настройки и отчёты хранятся в локальном хранилище приложения. При необязательном доступе к статистике использования SuperPinger читает общие счётчики сетевого трафика Android, например для итогов за день и месяц. Этот доступ не используется для составления истории посещённых сайтов.<br><br>Карта содержит названия, размеры и положение комнат, координаты точек внутри плана, измеренный сигнал и время измерений, идентификатор сети Wi-Fi и вручную установленную позицию роутера. Пользователь рисует план сам; он не строится по GPS. Файл карты хранится в каталоге приложения, исключённом из резервного копирования Android, и не загружается в картографический сервис разработчика. Пульсация — визуальный эффект, а не новый замер.<br><br>Экспорт CSV/отчёта и системная команда «Поделиться» передают выбранный файл в указанное вами приложение или место хранения. Получатель самостоятельно управляет своей копией.</div></section>
+<section><h2>4. Необязательные мониторинг, виджеты и Telegram</h2><div>При включении мониторинга хостов или постоянного обновления виджета приложение может запускать фоновую службу с постоянным уведомлением и расходовать сеть и аккумулятор. Включённый мониторинг хостов может возобновляться после перезагрузки с учётом ограничений Android. Отключить эти функции можно в настройках. Существующие инструменты мониторинга не требуют PRO.<br><br>Если вы настроили и включили Telegram, токен бота, ID чата и содержание уведомления используются для прямого обращения к <a href="https://telegram.org/privacy">Telegram Bot API</a>. События могут содержать названия и адреса сохранённых хостов, изменение доступности и время. Telegram и участники выбранного чата получают доступ к доставленным сообщениям. Тестовое сообщение отправляется по вашей команде.<br><br>Настройки бота шифруются локально ключом Android Keystore. Файлы настроек и очереди исключены из резервного копирования Android. Текст ожидающих событий хранится локально в закрытом каталоге приложения; очередь ограничена 100 событиями. Доставленные события удаляются из очереди; события старше 24 часов отбрасываются при следующей обработке очереди службой. Выключение отправки приостанавливает доставку, а удаление токена в приложении очищает настройки и очередь. Это не удаляет сообщения, уже отправленные в Telegram. Отозвать токен можно через BotFather.</div></section>
+<section><h2>5. Реклама и подписка PRO</h2><div>Бесплатная версия использует Google AdMob: нижний баннер, баннеры в окнах результатов и межстраничные объявления. Google Mobile Ads SDK собирает и передаёт IP-адрес, сведения о взаимодействиях с приложением и рекламой, диагностику и показатели работы, поддерживаемые идентификаторы устройства/аккаунта, включая рекламный ID Android. Цели — реклама, аналитика и предотвращение мошенничества. По IP может оцениваться приблизительное местоположение. Подробнее: <a href="https://policies.google.com/privacy">политика Google</a>, <a href="https://policies.google.com/technologies/ads">рекламные технологии Google</a> и <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">описание данных SDK</a>.<br><br>Доступные настройки рекламного ID и конфиденциальности находятся в Android/Google и зависят от устройства. Их изменение не обязательно прекращает всю обработку рекламных данных.<br><br>Google Play обрабатывает покупку, продление, отмену PRO и активацию промокодов. Приложение получает идентификаторы товара/покупки, состояние покупки, статус подтверждения и токен покупки, необходимые для предоставления доступа. Разработчик не получает реквизиты вашей банковской карты. Текущая версия проверяет подписки через Google Play Billing на устройстве и не передаёт токены покупок на сервер подписок разработчика. Локальная отметка времени вне резервного копирования поддерживает краткий офлайн-кэш статуса до 24 часов. Подробнее: <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice">уведомление о конфиденциальности Google Payments</a>.<br><br>Пока приложение распознаёт подписку PRO как активную, оно не запрашивает и не показывает баннеры и межстраничную рекламу. PRO не удаляет ранее обработанные рекламными сервисами данные и не отключает используемые вами сетевые проверки, определение IP и Telegram. Удаление приложения не отменяет подписку Google Play.</div></section>
+<section><h2>6. Разрешения и специальный доступ Android</h2><div><ul><li><strong>INTERNET / ACCESS_NETWORK_STATE / ACCESS_WIFI_STATE:</strong> сетевые запросы и сведения о подключении/Wi-Fi.</li><li><strong>ACCESS_COARSE_LOCATION / ACCESS_FINE_LOCATION:</strong> Android может требовать разрешение местоположения для доступа к идентификатору Wi-Fi и информации о сигнале при диагностике и построении карты. На некоторых устройствах также требуется включить службы местоположения. Диагностика приложения не запрашивает GPS-координаты и не записывает маршруты передвижения.</li><li><strong>READ_PHONE_STATE:</strong> доступные сведения о мобильной сети, SIM и состоянии телефонии. Не используется для чтения записей звонков, SMS или контактов.</li><li><strong>PACKAGE_USAGE_STATS:</strong> необязательный специальный доступ к общей статистике сетевого трафика.</li><li><strong>POST_NOTIFICATIONS:</strong> оповещения мониторинга и уведомления работающих служб.</li><li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_SPECIAL_USE / RECEIVE_BOOT_COMPLETED:</strong> включённые пользователем мониторинг и виджет, включая допустимый запуск после перезагрузки.</li><li><strong>VIBRATE:</strong> тактильный отклик.</li><li><strong>Разрешения рекламного ID и Google Play Billing:</strong> рекламные идентификаторы и покупка/восстановление подписки.</li></ul>Разрешения и специальный доступ меняются в настройках Android. Отказ от необязательного доступа может ограничить соответствующую функцию и не требует предоставлять несвязанный доступ.</div></section>
+<section><h2>7. Хранение, резервные копии, удаление и защита</h2><div>Проверенная версия не загружает историю диагностики, планы покрытия или данные бота в серверную базу разработчика. Это не означает, что никакие данные не покидают устройство: внешние узлы диагностики, IP-сервисы и реестры, Telegram, реклама Google и Google Play обрабатывают описанные выше сведения.<br><br>История и настройки обычно сохраняются до удаления, замены или очистки хранилища приложения. Резервное копирование Android включено: допустимые базы, настройки и другие файлы могут копироваться или переноситься согласно настройкам Android, устройства и аккаунта. Карта покрытия, настройки/очередь Telegram и кэш подписки находятся в каталоге без резервного копирования. Экспортированные копии находятся вне контроля приложения.<br><br>Очистка хранилища или удаление приложения удаляют локальную копию. Для соответствующей истории и Telegram доступны действия удаления в приложении. Резервными копиями системы и экспортированными файлами нужно управлять отдельно. Удаление локальных данных не удаляет доставленные сообщения Telegram и записи Google или других поставщиков; используйте их средства управления данными.<br><br>Запросы к указанным API публичного IP, реестров и Telegram используют HTTPS. Не все диагностические протоколы, например ICMP и соединения с выбранными сервисами, шифруются. Приложение не является защищённым туннелем. Закрытое хранилище Android и Keystore защищают соответствующие локальные файлы, но ни один способ хранения и передачи не гарантирует абсолютной безопасности.</div></section>
+<section><h2>8. Обращения, права, дети и изменения политики</h2><div>Если вы обращаетесь к нам, мы обрабатываем присланные контактные данные и содержание для ответа; переписку также обрабатывает почтовый провайдер. Не присылайте платёжные реквизиты и токены ботов. Переписка сохраняется в объёме и на срок, разумно необходимые для ответа, решения вопроса и выполнения применимых обязательств. В зависимости от законодательства у вас могут быть права на доступ, исправление, удаление, ограничение обработки, возражение против неё и обращение в местный надзорный орган. Запросы о данных под нашим контролем направляйте на <a href="mailto:support@superpinger.app">support@superpinger.app</a>; по данным сторонних сервисов может потребоваться обратиться к соответствующему поставщику.<br><br>SuperPinger не предназначен для детей младше 13 лет. Свяжитесь с нами, если считаете, что ребёнок передал нам персональные данные.<br><br>Ссылки на соцсети открывают сервисы с собственными правилами. Эта страница размещается через GitHub Pages, и её посещение регулируется <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">политикой GitHub</a>. На самой странице нет рекламных и аналитических скриптов.<br><br>Политика может обновляться при изменении приложения и сервисов; дата указывает последнюю редакцию. Само продолжение использования здесь не считается согласием на обработку, для которой по закону требуется отдельное согласие.</div></section>
+</article>
+<footer>© 2026 SuperPinger · <a href="mailto:support@superpinger.app">support@superpinger.app</a></footer></main></body></html>
